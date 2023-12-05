@@ -1,0 +1,106 @@
+.BlogDetailsContainer{
+    font-family: 'Raleway', sans-serif;
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-around;
+}
+.leftDetails{
+    width: 55%;
+}
+.rightDetails{
+    width: 40%;
+    margin-left: 30px;
+}
+.leftDetails .imgsection{
+    margin-bottom: 40px;
+    
+}
+.leftDetails .imgsection img{
+    width: 100%;
+}
+.leftDetails ul{
+    margin-left: 40px;
+}
+.leftDetails ul li{
+    list-style: square;
+    line-height: 1.7;
+}
+.leftDetails p{
+    line-height: 1.7;
+}
+.leftDetails h2{
+    color: #000;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.leftDetails h2 span{
+    color: red;
+}
+.leftDetails .icons{
+    font-size: 20px;
+}
+.ListGroupItem{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border: none !important;
+}
+.ListGroupItem .Img{
+  margin-right: 10px;
+}
+.BottomDeatils{
+  display: flex;
+  align-items: center;
+}
+.BottomDeatils div{
+  margin-right: 15px;
+}
+.bloglink{
+  color: #000;
+  font-weight: 600;
+  font-size: 17px;
+  text-align: left;
+  text-decoration: none;
+  transition: .3s;
+}
+.bloglink:hover{
+  color: red;
+}
+.imgsection img{
+  transition: .3s;
+}
+.imgsection img:hover{
+  opacity: 0.8;
+  cursor: pointer;
+}
+.bigtitle{
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+.BigTitle{
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.BigTitle h1{
+  font-weight: bold;
+}
+.Date{
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  line-height: 1.1;
+  border-radius: 100px;
+  margin-right: -10px;
+  opacity: 0.8;
+  z-index: 1;
+}
+.rightBigTitle{
+  display: flex;
+  align-items: center;
+}

@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,700;0,900;1,100;1,900&display=swap');
+.page-footer{
+    background-color: #181818;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+.footlogo{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.row p{
+    font-weight: 200;
+    font-size: 16px;
+    padding: 0 25px ;
+}
+.text-uppercase{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: left;
+}
+.list-unstyled{
+    line-height: 1.8;
+}
+.list-unstyled li{
+    text-align: left;
+} 
+.list-unstyled li a{
+   color: white;
+   font-weight: 300;
+}
+.list-unstyled li:hover a{
+   color: red;
+ }
+.list-unstyled .icon{
+    font-size: 15px;
+    color: red;
+    margin-right: 5px;
+}
+.footer-copyright {
+    background-color: red;
+    font-weight: 700;
+}
+
+@media screen and (max-width:770px) {
+    .list-unstyled li,.text-uppercase{
+        text-align: center;
+    } 
+}
+

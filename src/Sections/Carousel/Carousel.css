@@ -1,0 +1,75 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;0,800;0,900;1,300;1,400&display=swap');
+
+.Carousel_caption{
+      width: 100%;
+      padding: 60px;
+      text-align: left;
+      font-family: 'Raleway', sans-serif;
+}
+.Carousel_caption h5{
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    color: #fff;
+    font-size: 35px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+.Carousel_caption p{
+
+    color: #fff;
+    font-size: 20px;
+
+}
+.Carousel_caption h5 b{
+    color: red;
+}
+.background{
+    width: 100%;
+    height: max-content;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    position: relative;
+}
+.background:nth-child(1){
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../../Components/assets/img/gabriel-gurrola-u6BPMXgURuI-unsplash.webp');
+}
+.background:nth-child(2){
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../../Components/assets/img/lance-asper-50cIn5ELxLo-unsplash.webp');
+}
+.icons{
+    color: red;
+    font-size: 30px;
+}
+.Carousel_caption ul li{
+    color: #fff;
+    font-size: 26px;
+}
+.findbtn{
+    color: red;
+    font-weight: 700;
+    background-color: transparent;
+    padding: 20px 70px;
+    text-decoration: none;
+    border: 2px solid red;
+    transition: .5s;
+}
+.findbtn:hover{
+    background-color:red ; 
+    color: black
+}
+ul {
+    padding-left: 0 !important;
+    margin-bottom: 3em;
+}
+
+@media (max-width : 873px) {
+    .Carousel_caption {
+      margin: auto;
+      text-align: center;
+    }
+    .Carousel_caption h5 {
+        font-size: 26px;
+    }
+}

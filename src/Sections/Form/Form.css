@@ -1,0 +1,63 @@
+
+.Form-Container{
+  width: 100%;
+  height: max-content;
+  padding: 20px;
+  background-color: #181818;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.FormContainer{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 10px;
+  color: white;
+  padding: 30px 0px;
+}
+.inputsdate{
+  padding: 5px 20px;
+  border: 3px solid red;
+  width: 100%;
+  caret-color: red;
+}
+.inputsdate:focus{
+  outline: none;
+  border: none;
+  border-bottom: 3px solid red;
+  font-family: 'Raleway', sans-serif;
+}
+.labels{
+  margin-bottom: 6px;
+  font-weight: bold;
+  font-family: 'Raleway', sans-serif;
+}
+select {
+  padding: 5px;
+  border: 3px solid red;
+  width: 100%;
+}
+select:focus{
+  outline: none;  
+  border: none;
+  border-bottom: 3px solid red;
+}
+.contain{
+  display: flex;
+  gap: 10px;
+}
+@media screen and (max-width:880px) {
+  .FormContainer{
+    grid-template-columns: auto auto auto;
+  }
+  .FormBtn{
+    padding: 5px;
+  }
+}
+@media screen and (max-width:650px) {
+  .FormContainer{
+    grid-template-columns: auto auto;
+  }
+  .FormContainer{
+    display: block;
+  }
+  
+}

@@ -1,0 +1,56 @@
+
+.Item img{
+  width: 100%;
+}
+.GalleryGrid{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 15px;
+  margin-top: 40px;
+}
+.Item{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Item::after{
+  content: "\f00e";
+  font-family: "Font Awesome 6 Free";
+  font: var(--fa-font-solid);
+  font-size: 40px;
+  color: #000;
+  width: 90%;
+  height: 90%;
+  margin: auto; 
+  background-color: red;
+  position: absolute;
+  z-index: 11;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  opacity: 0;
+  transition: all .5s ease-in-out;
+}
+.Item:hover::after{
+  opacity: 1;
+}
+.Filter_Galerry{
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+}
+.GalleryDiv{
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+
+@media screen and (max-width: 640px){
+  .GalleryGrid {
+    grid-template-columns: auto auto;
+    margin-top: 25px;
+  }
+}
+
+

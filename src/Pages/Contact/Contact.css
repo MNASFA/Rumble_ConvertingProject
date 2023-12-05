@@ -1,0 +1,98 @@
+
+.contactTitle{
+    text-align: center;
+    padding: 20px;
+    background-color: #f5f5f5;
+    color: #000;
+    font-weight: bold;
+}
+.ContactContainer{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 40px 0;
+    font-family: 'Raleway', sans-serif;
+}
+.ContactContainer .leftContact{
+    width: 50%;
+}
+.ContactContainer .rightContact{
+    width: 45%;
+}
+.form-control{
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid red;
+    caret-color: red;
+}
+.form-control:focus{
+    color: #212529;
+    background-color: #fff;
+    border-bottom: 1px solid red;
+    outline: 0;
+    box-shadow: none;
+}
+.form-label{
+    font-weight: bold;
+}
+
+.btn-danger{
+    width: 100%;
+    padding: 10px;
+    border: none !important;
+    background-color: red;
+    color: white;
+    border-radius: 0;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    transition: ease-out .5s;
+    font-family: 'Raleway', sans-serif;
+}
+.btn-danger::before{
+  content: '';
+  transition:  .5s all ease;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  right: 50%;
+  opacity: 0;
+  background-color: #181818;
+}
+.btn-danger:hover:before{
+  transition:  .5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  z-index: -1;
+}
+.Register{
+    padding: 10px;
+    text-align: center;
+    font-weight: 700;
+}
+.registerlink{
+    text-decoration: none;
+    color: red;
+    margin-left: 8px;
+    font-weight: bold;
+}
+.registerlink:hover{
+    color: #000;
+}
+.RegisterContainer{
+    font-family: 'Raleway', sans-serif;
+}
+@media (max-width : 500px) {
+    .ContactContainer{
+        display: block;
+    }
+    .ContactContainer .leftContact , .ContactContainer .rightContact{
+        width: 100%;
+    }
+    
+}
+
+

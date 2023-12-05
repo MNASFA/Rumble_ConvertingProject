@@ -1,0 +1,67 @@
+.MarquesSection{
+  font-family: 'Raleway', sans-serif;
+  margin-bottom: 40px;
+}
+.MarquesTitle{
+  margin-bottom: 40px;
+}
+.MarquesTitle strong{
+  font-weight: bold;
+  color: #000;
+  font-size: 30px;
+  padding: 14px 0;
+  position: relative;
+}
+.MarquesTitle strong::after{
+  content: '';
+  width: 30%;
+  height: 3px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: red;
+}
+
+.MarquesGrid{
+  margin: 20px 0;
+  padding: 20px 0;
+  display: grid;
+  grid-template-columns: repeat(4 , auto);
+  gap: 20px;
+}
+
+.MarquesItem{
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.TitleMarques{
+
+  margin-top: 15px;
+  padding: 10px;
+}
+.GlobalLink{
+  text-decoration: none;
+}
+.BottomLink{
+  color: #000;
+  font-weight: bold;
+  font-size: 17px;
+  text-decoration: none !important;
+  transition: .3s;
+}
+.GlobalLink:hover .BottomLink{
+  color: red;
+}
+@media (max-width:750px) {
+  .MarquesGrid{
+    grid-template-columns: repeat(3 , auto);
+  }
+}
+@media (max-width:450px) {
+  .MarquesGrid{
+    grid-template-columns: repeat(2 , auto);
+  }
+}
+

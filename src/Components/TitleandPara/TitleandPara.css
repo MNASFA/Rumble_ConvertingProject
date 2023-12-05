@@ -1,0 +1,40 @@
+.description-top strong{
+    font-size: 45px;
+    font-weight: bold;
+    position: relative;
+    padding: 15px 0;
+  }
+  .description-top strong::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    background-color: red;
+  }
+  .description-top strong span{
+    color: red;
+  }
+  .description-top{
+    text-align: center;
+    padding: 0 40px;
+    margin-bottom: 20px;
+    width: 70%;
+    margin: auto;
+  }
+  @media screen and (max-width: 640px){
+    .description-top {
+      padding: 0;
+  }
+  }
+  @media screen and (max-width: 500px){
+    .description-top {
+      padding: 0;
+      width: 100%;
+      margin: 0;
+  }
+  .description-top strong{
+    font-size: 35px;
+  }
+  }

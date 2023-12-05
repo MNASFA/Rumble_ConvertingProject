@@ -1,0 +1,150 @@
+.ServicesGrid{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    gap: 15px;
+    padding: 20px;
+}
+
+.ServicesDescription{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 70px 0;
+    margin-top: 30px;
+    font-family: 'Raleway', sans-serif;
+}
+.ServicesDescription .right , .ServicesDescription .left{
+    width: 42%;
+}
+.ServicesDescription .right img{
+    width: 100%;
+}
+.ServicesDescription .left h1{
+    font-weight: bold;
+    font-size: 2rem;
+}
+.ServicesDescription .left h1 span{
+    color: red;
+}
+.ServiceCard{
+    font-family: 'Raleway', sans-serif;
+    border: none;
+    border-radius: 0;
+}
+.btn-services{
+    border-radius: 0;
+    background-color: red;
+    border: none;
+    transition:all ease-in-out .5s;
+    padding: 10px;
+    position: relative;
+    color: white;
+    width: 100%;
+    z-index: 1;
+}
+
+.btn-services::before{
+    content: '';
+    transition:  .5s all ease;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    right: 50%;
+    opacity: 0;
+    background-color: #181818;
+}
+.btn-services:hover::before{
+    transition:  .5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    z-index: -1;
+}
+.BottomOfCard{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.BottomOfCard a{
+    color: red;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+}
+.BottomOfCard a:hover{
+    color: black;
+
+}
+.btn-blog{
+    width: 50%;
+    color: #ECF2FF !important;
+    text-align: center;
+}
+.Services2section{
+    width: 100%;
+    background-color: #ECF2FF;
+    height: max-content;
+    padding: 30px 100px;
+    margin-bottom: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.Services2section .serviceitem{
+    padding: 15px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+.serviceitem h1{
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 7px;
+}
+.serviceitem .serviceicons{
+    color: red;
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+.LikeComment{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px ;
+}
+.icon{
+    color: red;
+    margin-right: 3px;
+}
+@media (max-width : 800px) {
+    .ServicesGrid{
+        grid-template-columns: repeat(2,auto);
+    }
+    .ServicesDescription{
+        display: block;
+        text-align: center;
+    }
+    .ServicesDescription .right , .ServicesDescription .left{
+        width: 100%;
+    }
+  }
+  @media (max-width : 500px) {
+    .ServicesGrid{
+        display: block;
+        text-align: center;
+    }
+    .ServiceCard{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .ServicesDescription{
+        padding: 30px 0;
+    }
+    .Services2section{
+        display: block;
+        padding: 30px 10px;
+    }
+  }
+

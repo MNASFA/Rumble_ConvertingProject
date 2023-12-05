@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
+
+.left h2{
+  color: #000;
+  font-weight: bold;
+}
+.left p{
+  line-height: 1.8;
+}
+.left h2 span{
+  color: red;
+}
+.MarquePageTitle h2{
+  font-family: 'Bruno Ace SC', cursive;
+  font-size: 50px;
+}
+.ImageRight {
+  text-align: center !important;
+}
+.ModelTitle {
+  margin: 50px 0;
+  text-align: center;
+}
+.ModelTitle strong{
+  font-size: 50px;
+  font-weight: bold;
+  font-family: 'Bruno Ace SC', cursive;
+  color: #000;
+  padding: 15px;
+  position: relative;
+}
+.ModelTitle strong::after{
+  content: '';
+  position: absolute;
+  width: 50%;
+  height: 3px;
+  background-color: red;
+  left: 25%;
+  right: 25%;
+  bottom: 0;
+}

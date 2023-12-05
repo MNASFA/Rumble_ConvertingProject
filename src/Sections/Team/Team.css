@@ -1,0 +1,20 @@
+.TeamContainer{
+    width: 100%;
+    height: max-content;
+    padding: 40px 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url(../../Components/assets/img/teambg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.TeamContainer .description-top{
+    color: white;
+}
+.slidercontainer{
+    width: 100%;
+}

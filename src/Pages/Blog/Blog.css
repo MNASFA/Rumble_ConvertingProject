@@ -1,0 +1,26 @@
+.BlogGird{
+    margin-bottom: 50px;
+}
+
+.slick-dots li button:before
+{
+  
+    font-size: 9px;
+    content: '•';
+ 
+    color: red;
+
+}
+.slick-dots li.slick-active button:before
+{
+    opacity: .75;
+    color: red;
+}
+.slick-prev,
+.slick-next
+{
+   display: none !important;   
+}
+.topofsection{
+    margin-bottom: 15px;
+}
